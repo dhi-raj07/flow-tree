@@ -1,0 +1,46 @@
+{
+	"contracts": {
+		"FlowLink": "./cadence/contracts/FlowLink.cdc",
+		"FlowToken": {
+			"source": "./cadence/contracts/FlowToken.cdc",
+			"aliases": {
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "./cadence/contracts/FungibleToken.cdc",
+			"aliases": {
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "./cadence/contracts/NonFungibleToken.cdc",
+			"aliases": {
+				"testnet": "631e88ae7f1d7c20"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "9dd31c47b9787db33b2bb3d4f6fc6c9f6dd4e3c1c2838ce9bda0c0fad3e98344"
+		},
+		"testnet": {
+			"address": "a2d9147131cd0f21",
+			"key": "a0a24cf494439d88d1dc49df8e063f8f2b1bf36328f3724a2ca492bd01bc8436"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet": [
+				"FlowLink"
+			]
+		}
+	}
+}
